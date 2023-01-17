@@ -9,11 +9,10 @@ echo "  "
 echo ""
 echo ""
 
-#export encryption_key=demo
 
 echo "   ------------------------------------------------------------------------------------------------------------------------------"
 echo "   🔐  Encryption Key"
-echo "        $encryption_key"
+echo "        $ENCRYPTION_KEY"
 echo ""
 
 
@@ -23,7 +22,7 @@ ls -al scripts| sed 's/^/         /'
 echo ""
 
 rm -f /tmp/script.sh
-echo $encryption_key >  /tmp/pwd.yaml
+echo $ENCRYPTION_KEY > /tmp/pwd.yaml
 
 echo "   ------------------------------------------------------------------------------------------------------------------------------"
 echo "   🚀  Launching Scripts"
